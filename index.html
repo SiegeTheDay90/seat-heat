@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Seat Selector</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta id="meta-data" data-seat data-row />
+    </head>
+    <body>
+        <h1>T207 Seat Selector</h1>
+        <p id="blurb">
+            Welcome to seat selector, a seating-survey app designed by Mr. Smith to get some insight on student seating preferences. 
+            Choices made in this app are non-binding and not final!
+        </p>
+        <div id="form">
+
+            <label>Period: 
+                <select id="period">
+                    <option disabled selected>Choose One</option>
+                    <option value="1">Pd 1</option>
+                    <option value="2">Pd 2</option>
+                    <option value="3">Pd 3</option>
+                    <option value="7">Pd 7</option>
+                </select>
+            </label>
+            <label>
+                School Email: 
+                <input id="email" type="email" />
+            </label>
+        </div>
+        <table id="seat-map">
+            <tr>
+                <td data-row="4">1</td><td data-row="4">2</td><td data-row="4">3</td><td data-row="4">4</td><td data-row="4">5</td><td data-row="4">6</td>
+            </tr>
+            <tr>
+                <td data-row="3">7</td><td data-row="3">8</td><td data-row="3">9</td><td data-row="3">10</td><td data-row="3">11</td><td data-row="3">12</td><td data-row="3">13</td><td data-row="3">14</td>
+            </tr>
+            <tr>
+                <td data-row="2">15</td><td data-row="2">16</td><td data-row="2">17</td><td data-row="2">18</td><td data-row="2">19</td><td data-row="2">20</td><td data-row="2">21</td><td data-row="2">22</td>
+            </tr>
+            <tr>
+                <td data-row="1">23</td><td data-row="1">24</td><td data-row="1">25</td><td data-row="1">26</td><td data-row="1">27</td><td data-row="1">28</td><td data-row="1">29</td><td data-row="1">30</td>
+            </tr>
+        </table>
+        <button style="width: fit-content; margin-top: 15px">Submit</button>
+        <script src="scripts/index.js"></script>
+    </body>
+    
+</html>
